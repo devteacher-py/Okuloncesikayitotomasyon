@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 1px; /* Yüksekliği %80 azaltmak için */
+    line-height: 1px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    padding: 10px;  /* Başlık hücrelerinde daha büyük padding */
+    line-height: 1.5;  /* Başlık hücrelerinin daha yüksek görünmesini sağlar */
+    font-weight: bold;  /* Başlıkların vurgulu görünmesi için */
+}
+
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%; /* Genişliği %90 azaltmak için */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:last-child:hover {
+    background-color: #c82333;
+}
+
+button-container {
+    display: flex;
+    justify-content: space-between; /* Butonları yan yana yerleştirmek için */
+}
+.save-button {
+    padding: 15px; /* Yüksekliği artırmak için */
+    width: 100%; /* Uzunluğu artırmak için */
+    background-color: #28a745; /* Buton rengini yeşil yapma */
+    font-size: 16px; /* Font boyutunu artırma */
+}
+
+.save-button:hover {
+    background-color: #218838; /* Hover durumunda renk değişikliği */
+}
+form, table {
+    width: 60%; /* Form ve tabloyu aynı genişlikte yapıyoruz */
+    margin: 0 auto; /* Ortalamak için */
+}
